@@ -50,5 +50,55 @@ WHERE
  --Ela permite que você especifique critérios para restringir as linhas retornadas pela consulta.
 
  Comandos 
-
+#Na SCHEMA world (select)Selecione (*)todas as colunas na tabela de (from)origem *word.city
  select * from word.city
+
+/*
+Consulta imprecisa
+*/
+
+#Na SCHEMA world (select)Selecione (*)todas as colunas na tabela de (from)origem *contry
+ Select * from contry
+ 
+#Na SCHEMA world (select)Selecione (*)todas as colunas na tabela de (from)origem *countrylaguage
+ select * from countrylaguage
+
+ /*
+Consulta Simples
+*/
+
+#Na SCHEMA world (select)Selecione (from)origem *country
+select from country
+
+#Na SCHEMA world (select)Selecione coluna [name] (from)origem *country
+select name from country
+
+#Na SCHEMA world (select)Selecione coluna [name], [SurfaceArea] (from)origem *country
+select name, SurfaceArea from country
+
+/*
+Consulta Mais precisa
+*/
+
+#Na SCHEMA world (select)Selecione coluna [name], [continent], [region], [LifeExpectancy] (from)origem *country
+select name, continent, region, LifeExpectancy
+from country
+
+
+--Ex. de dados gerais e com duplicidade
+#Na SCHEMA world (select)Selecione (*)todas as colunas na tabela de (from)origem *country
+select * from country
+
+
+--Ex. de dados sem duplicidade
+#Na SCHEMA world (select)Selecione (distinct)sem duplicidade a coluna[countrycode] na tabela de (from)origem *city
+select distinct countrycode from city
+
+--Ex. de dados sem duplicidade com alteração de ordem das colunas
+#Na SCHEMA world (select)Selecione (distinct)sem duplicidade a coluna[countrycode], [name] na tabela de (from)origem *city
+select distinct countrycode, name from city
+
+--Ex. de dados com alteração de ordem das colunas
+#Na SCHEMA world (select)Selecione [name], [continent], [region], [LifeExpectancy] na tabela de (from)origem *country
+select name, continent, region, LifeExpectancy
+from country
