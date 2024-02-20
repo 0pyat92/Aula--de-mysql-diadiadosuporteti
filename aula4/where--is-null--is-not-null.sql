@@ -1,17 +1,17 @@
 --vamos aprender hoje um pouco mais sobre o where agora usando o is null e os is not null
 
-#Em word (select)Selecione (*)tudo na tabela de (from)origem *country (where)onde o *indepYear é is null
+#Em world (select)Selecione (*)tudo na tabela de (from)origem *country (where)onde o *indepYear é is null
 select * from country
 where indepYear is null
 
-#Em word (select)Selecione (*)tudo na tabela de (from)origem *country (where)onde o *indepYear não é is not null
+#Em world (select)Selecione (*)tudo na tabela de (from)origem *country (where)onde o *indepYear não é is not null
 select * from country
 where indepYear is not null
 
 
 
 #like '??%' e '%??'
-#Em word (select)Selecione (*)tudo na tabela de (from)origem *city (where)onde o *nome (like)me retorne tudo que começar com'ka%'
+#Em world (select)Selecione (*)tudo na tabela de (from)origem *city (where)onde o *nome (like)me retorne tudo que começar com'ka%'
 select * from city
 where name like 'ka%'
 
